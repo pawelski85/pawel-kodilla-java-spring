@@ -22,8 +22,9 @@ public class Board {
         this.doneList.addTask(string3);
 
     }
-    public void readTasksList(){
-        System.out.println("Reading "+toDoList.getList()+inProgressList.getList()+doneList.getList());
+    public String readTasksList(){
+        System.out.println("to do = "+toDoList.getList()+"in progress = "+inProgressList.getList()+ "done = "+ doneList.getList());
+        return "to do = "+toDoList.getList()+"in progress = "+inProgressList.getList()+ "done = "+ doneList.getList();
     }
 
 
